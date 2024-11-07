@@ -1,9 +1,3 @@
-
-
-export default function Search() {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+export const Search = () => {
+  return <div>Search</div>;
+};
