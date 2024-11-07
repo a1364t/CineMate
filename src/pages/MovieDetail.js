@@ -1,3 +1,3 @@
 export const MovieDetail = () => {
-  return <div>Detail</div>;
+  return <main>Detail</main>;
 };
