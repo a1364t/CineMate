@@ -2,10 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
 main {
-    max-width: 1280px;
-    margin: auto;
-    min-height: 90vh;
-    padding: 10px;
+  max-width: 1280px;
+  margin: auto;
+  min-height: 90vh;
+  padding: 10px;
 }

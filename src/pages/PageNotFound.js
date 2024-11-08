@@ -1,6 +1,8 @@
 import image_404 from "../assets/404.png";
+import { useTitle } from "../hooks/useTitle";
 
 export const PageNotFound = () => {
+  useTitle("Not Found");
   return (
     <main>
       <section className="flex flex-col justify-center px-2">

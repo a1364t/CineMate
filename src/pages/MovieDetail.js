@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import movieImage from "../assets/CineMate.webp";
+import { useTitle } from "../hooks/useTitle";
 
 export const MovieDetail = () => {
   const params = useParams();
@@ -20,6 +21,8 @@ export const MovieDetail = () => {
     fetchMovie();
   }, [params.id]);
 
+  useTitle(movie.title);
+
   return (
     <main>
       <section className="flex justify-around flex-wrap py-5">
@@ -32,7 +35,10 @@ export const MovieDetail = () => {
           {movie.genres ? (
             <p className="my-7 flex flex-wrap gap-2">
               {movie.genres.map((genre) => (
-                <span className="mr-2 border border-gray-200 rounded p-2">
+                <span
+                  key={genre.id}
+                  className="mr-2 border border-gray-200 rounded p-2"
+                >
                   {genre.name}
                 </span>
               ))}

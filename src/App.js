@@ -1,5 +1,5 @@
 import "./App.css";
-import { Card, Footer, Header } from "./components";
+import { Footer, Header } from "./components";
 import { AllRoutes } from "./routes/AllRoutes";
 
 function App() {

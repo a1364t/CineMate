@@ -10,7 +10,7 @@ export const Card = ({ movie }) => {
     <div>
       <div className=" m-3 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <Link to={`/movie/${id}`}>
-          <img className="rounded-t-lg" src={image} alt="Movie Image" />
+          <img className="rounded-t-lg" src={image} alt={movie.title} />
         </Link>
         <div className="p-5">
           <Link to={`/movie/${id}`}>
