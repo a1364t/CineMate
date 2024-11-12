@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, ScrollRestoration } from "react-router-dom";
 
 import { MovieDetail, MovieList, PageNotFound, Search } from "../pages";
 
@@ -26,6 +26,7 @@ export const AllRoutes = () => {
         <Route path="search" element={<Search apiPath="search/movie" />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
+      <ScrollRestoration />
     </>
   );
 };
