@@ -2,6 +2,7 @@ import { Routes, Route, ScrollRestoration } from "react-router-dom";
 
 import { MovieDetail, MovieList, PageNotFound, Search } from "../pages";
 import { MovieRecommendations } from "../pages/MovieRecommendations";
+import { About } from "../pages/About";
 
 export const AllRoutes = () => {
   return (
@@ -27,6 +28,7 @@ export const AllRoutes = () => {
         <Route path="search" element={<Search apiPath="search/movie" />} />
         <Route path="*" element={<PageNotFound />} />
         <Route path="/recommendadtions" element={<MovieRecommendations title="Recommendations" />} />
+        <Route path="/about" element={<About title="About" />} />
       </Routes>
       <ScrollRestoration />
     </>
