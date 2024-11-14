@@ -181,6 +181,15 @@ export const Header = () => {
                   Up Coming
                 </NavLink>
               </li>
+              <li>
+                <NavLink
+                  to="/recommendadtions"
+                  end
+                  className={({ isActive }) => (isActive ? active : inactive)}
+                >
+                  AI Suggester
+                </NavLink>
+              </li>
             </ul>
           </div>
         </div>
